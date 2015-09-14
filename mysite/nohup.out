@@ -1,0 +1,22 @@
+[14/Sep/2015 15:28:14] "GET /admin/ HTTP/1.1" 200 3665
+[14/Sep/2015 15:28:14] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[14/Sep/2015 15:28:14] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[14/Sep/2015 15:28:14] "GET /static/admin/img/default-bg.gif HTTP/1.1" 304 0
+[14/Sep/2015 15:28:14] "GET /static/admin/img/icon_changelink.gif HTTP/1.1" 304 0
+[14/Sep/2015 15:28:14] "GET /static/admin/img/icon_addlink.gif HTTP/1.1" 304 0
+[14/Sep/2015 15:28:14] "GET /static/admin/img/nav-bg.gif HTTP/1.1" 304 0
+[14/Sep/2015 15:28:17] "GET /admin/auth/user/ HTTP/1.1" 200 7028
+[14/Sep/2015 15:28:17] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[14/Sep/2015 15:28:17] "GET /static/admin/img/icon-yes.gif HTTP/1.1" 200 299
+[14/Sep/2015 15:28:17] "GET /static/admin/img/nav-bg-selected.gif HTTP/1.1" 200 265
+[14/Sep/2015 15:28:17] "GET /static/admin/img/sorting-icons.gif HTTP/1.1" 200 369
+[2015-09-14 15:38:09,075 pyinotify ERROR] The pathname '/home/zcranberry/Program/learn_django/mysite/mysite/urls.py' of this watch <Watch wd=948 path=/home/zcranberry/Program/learn_django/mysite/mysite/urls.py mask=4038 proc_fun=None auto_add=False exclude_filter=<function <lambda> at 0x7f98f6231b18> dir=False > has probably changed and couldn't be updated, so it cannot be trusted anymore. To fix this error move directories/files only between watched parents directories, in this case e.g. put a watch on '/home/zcranberry/Program/learn_django/mysite/mysite'.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 14, 2015 - 15:28:08
+Django version 1.8.4, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[14/Sep/2015 15:38:27] "GET /polls HTTP/1.1" 301 0
+[14/Sep/2015 15:38:27] "GET /polls/ HTTP/1.1" 200 40
