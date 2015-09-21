@@ -4,6 +4,7 @@ from django.http import Http404,HttpResponse,HttpResponseRedirect
 from django.shortcuts import render,get_object_or_404
 from .models import Question, Choice
 from django.core.urlresolvers import reverse
+from django.views import generic
 
 
 def index(request):
@@ -13,6 +14,22 @@ def index(request):
     context = {'latest_question_list':latest_question_list}
     #return HttpResponse(template.render(context))
     return render(request, 'polls/index.html', context)
+
+class IndexView(generic.ListView):
+    template_name = 'polls/index.html'
+    context_object_name = 'latest_question_list'
+    def get_queryset(self):
+        return Question.objects.order_by('-pub_date')[:5]
+
+class DetailView(generic.DetailView):
+    model = Question
+    template_name = 'polls/detail.html'
+
+class ResultsView(generic.DetailView):
+    model = Question
+    template_name = 'polls/results.html'
+
+
 
 def detail(request, question_id):
     # try:
